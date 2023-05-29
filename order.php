@@ -250,34 +250,12 @@
             while ($row = $result->fetch_assoc()){
                 echo "
                  <input type='checkbox' name='order[]' value='$row[title]'/>$row[title]
-                 <input type='number' name='orderCount[]' min='0' max='10' />
-                
+                 <input type='number' name='orderCount[]' min='0' max='10'/>
+                 <br>
                 ";
+                
             }
-            
             ?>
-            
-            <!-- <input type="checkbox" name="Fish fillet" value="2" />Fish fillet
-            <input type="number" name="fish_num" id="2" min="0" max="10" />
-            <input type="checkbox" name="Pork chop" value="2" />Pork chop
-            <input type="number" name="porkchop_num" id="3" min="0" max="10" />
-            <input type="checkbox" name="Seafood mix" value="1" />Mix Seafood
-            <input type="number" name="seafood_num" id="4" min="0" max="10" /> 
-            <input type="checkbox" name="Pork Steak" value="2" />Pork Steak
-            <input type="number" name="lumpia_num" id="5" min="0" max="10" />
-
-            <br><br>
-            <input type="checkbox" name="Spaghetti" value="2" />Spaghetti
-            <input type="number" name="spag_num" id="6" min="0" max="10" />
-            <input type="checkbox" name="Chicken cordon bleu" value="2" />Chicken cordon bleu
-            <input type="number" name="cordon_num" id="7" min="0" max="10" />
-            <input type="checkbox" name="Lumpia" value="2" />Lumpia
-            <input type="number" name="porksteak_num" id="7" min="0" max="10" />
-            <input type="checkbox" name="Ginisang gulay" value="2" />Ginisang Gulay
-            <input type="number" name="gulay_num" id="7" min="0" max="10" />
-            <input type="checkbox" name="Puto" value="2" />Puto
-            <input type="number" name="Puto_num" id="7" min="0" max="10" />
-            <p><br /></p> -->
         </div>
         </fieldset>
         <p> <br> </p>
