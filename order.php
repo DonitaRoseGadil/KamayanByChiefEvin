@@ -13,6 +13,7 @@
     $address = "";
     $landmark = "";
     $payment = "";
+    $deliveryDate = "";
     $deliveryTime = "";
     $notes = "";
     $order = "";
@@ -29,6 +30,7 @@
         $address =  $_POST["address"];
         $landmark = $_POST["landmark"];
         $payment = $_POST["payment"];
+        $deliveryDate = $_POST["deliveryDate"];
         $deliveryTime = $_POST["deliveryTime"];
         $order = $_POST["order"];
         $notes = $_POST["notes"];
@@ -51,7 +53,7 @@
 
 
         do{
-            if(empty($name) || empty($phone) || empty($address) || empty($landmark) || empty($payment) || empty($deliveryTime) || empty($order)){
+            if(empty($name) || empty($phone) || empty($address) || empty($landmark) || empty($payment) || empty($deliveryDate) || empty($deliveryTime) || empty($order)){
 
                 $errorMessage = "All the fields are required";
                 break;
@@ -59,7 +61,7 @@
             }
             else{
 
-                $sql =  "INSERT INTO orders (name, phone, address, landmark, payment, deliveryTime, notes, foodOrder ) VALUES ('$name', '$phone', '$address', '$landmark', '$payment', '$deliveryTime', '$notes', '$allOrders')";
+                $sql =  "INSERT INTO orders (name, phone, address, landmark, payment, deliveryDate, deliveryTime, notes, foodOrder ) VALUES ('$name', '$phone', '$address', '$landmark', '$payment', '$deliveryDate', '$deliveryTime', '$notes', '$allOrders')";
 
                 $result = $connection->query($sql);
 
@@ -74,6 +76,7 @@
                 $address =  '';
                 $landmark =  '';
                 $payment = '';
+                $deliveryDate = '';
                 $deliveryTime = '';
                 $notes = '';
                 $order = '';
@@ -168,7 +171,7 @@
                     if(!empty($successMessage)){
                         echo "
                         
-                        <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                        <div class='alert alert-success alert-dismissible fade show' role='alert' align='center'>
                             <h5 style='margin: 20px; font-size: 20px'><strong>Order place succesully!</strong> $successMessage </h5>
                             <button type='butto' class='close' data-dismiss='alert' aria-label='Close'>
                             </button>
@@ -213,6 +216,8 @@
                 <option value="Gcash"> Gcash</option>
                 <option value="Cash on Delivery"> Cash On Delivery (COD)</option>
             </select>
+            <br><br>
+            <label>Preferred Delivery Date: </label><input type="date" name="deliveryDate" size="30" id="delivery date" required value="<?php echo $deliveryDate; ?>">
             <br><br>
             <label>Preferred Delivery Time: </label><input type="time" name="deliveryTime" size="30" id="delivery time" required value="<?php echo $deliveryTime; ?>">
             <br><br>    
