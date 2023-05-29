@@ -108,7 +108,7 @@ if (!isset($_GET['secretkey']) || $_GET['secretkey'] !== "578771b62a4c56df543538
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADMIN</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../admin.css">
+    <link rel="stylesheet" href="../css/admin.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="../css/menu.css"> 
 
