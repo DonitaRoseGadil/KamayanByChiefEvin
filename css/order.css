@@ -70,6 +70,7 @@ input[type="time"] {
 
 .menus_check {
   color: brown;
+  align-items: center;
 }
 
 input[type="checkbox"],

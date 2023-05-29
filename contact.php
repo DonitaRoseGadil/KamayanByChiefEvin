@@ -161,7 +161,7 @@
                         </div>
                         <div>
                             <span><ion-icon name="mail"></ion-icon></span>
-                            <a href="mailto:loremipsim@gmail.com">loremipsum@gmail.com</a>
+                            <a href="mailto:kamayancateringservices@gmail.com">kamayancateringservices@gmail.com</a>
                         </div>
                         <div>
                             <span><ion-icon name="call"></ion-icon></span>
