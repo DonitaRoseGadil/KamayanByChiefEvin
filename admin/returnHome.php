@@ -1,6 +1,6 @@
 <?php
 
 
-    header("location: /kamayan/index.html")
+    header("location: /KamayanByChiefEvin/index.html")
 
 ?>

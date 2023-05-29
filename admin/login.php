@@ -19,7 +19,7 @@
 
         do{
            
-            if($username == "admin" && $password == "kamayan123"){
+            if($username == "kamayan" && $password == "kamayan123"){
                 echo "yes";
                 header("location: menu.php?secretkey=578771b62a4c56df54353819e6c4134f");
             }
