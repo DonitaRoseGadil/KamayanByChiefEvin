@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/admin.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="../css/menu.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 
 
@@ -74,7 +75,11 @@
         <div class="container-fluid wrapper content">
         <div class="div p-3 d-flex justify-content-around align-items-center">
             <h1>Kamayan Menu</h1>
-            <button class="btn btn-primary"><a class="text-white" href="addMenu.php?secretkey=578771b62a4c56df54353819e6c4134f">Add Menu</a></button>
+
+            <button class="btn btn-primary add-menu-btn" data-toggle="tooltip" data-placement="top" title="Add Menu" onclick="window.location.href='addMenu.php?secretkey=578771b62a4c56df54353819e6c4134f'">
+            <i class="fas fa-plus text-white"></i>
+            </button>
+
         </div>
         <div class="menu container-fluid w-100 p-5" style="min-height: 100vh">
 
@@ -171,5 +176,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 </html>
