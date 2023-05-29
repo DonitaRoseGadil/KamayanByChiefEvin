@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Kamayan by Chef Evin & Catering Services</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <!--external style sheet-->
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/index.css"> 
+        <link rel="stylesheet" href="css/footer.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+        <!--Box Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    </head>
+
+    <body>
+        <div class="container">OPEN: Monday - Saturday 10:00 AM - 8:00 PM</div>
+        <header>
+            <div class="logo"><a href="index.html"><img src="images/kamayan_logo.jpg" alt="Kamayan Logo" height="60px"></a></div>
+            <div class="hamburger" onclick="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.php">MENU</a></li>
+                    <li><a href="reviews.php">REVIEWS</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
+                    <li><a href="order.php">ORDER</a></li>
+                    <li><a href="admin/login.php">ADMIN</a></li>
+                </ul>
+            </nav>
+        </header>
+
+<!--  CAROUSEL PART  -->
+
+        <div class="slider">
+            <input type="radio" name="slide" id="slide-1" checked>
+            <input type="radio" name="slide" id="slide-2">
+            <input type="radio" name="slide" id="slide-3">
+
+            <div class="slides">
+                <div class="slide slide-1">
+                    <div class="slide-data">
+                        <h1>KAMAYAN</h1>
+                        <p>Sarap ng Kamayan, hatid sa inyong hapag-kainan!</p>
+                        <a href="order.php"><button>ORDER NOW!</button></a>
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide-data">
+                        <h1>KAMAYAN</h1>
+                        <P>Kamayan by Chef Evin is a catering service located at Purok 10 Brgy. Alawihao Daet, Camarines Norte that offers various food packages for any occasion. </P>
+                        <a href="order.php"><button>ORDER NOW!</button></a>
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="slide-data">
+                        <h1>KAMAYAN</h1>
+                        <p>"From our kitchen to your table, let us reel in the flavor for your next event."</p>
+                        <a href="order.php"><button>ORDER NOW!</button></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="arrows arrow-left">
+                <label for="slide-3">
+                    <span><i class="fas fa-angle-left"></i></span>
+                </label>
+                <label for="slide-1">
+                    <span><i class="fas fa-angle-left"></i></span>
+                </label>
+                <label for="slide-2">
+                    <span><i class="fas fa-angle-left"></i></span>
+                </label>
+            </div>
+    
+            <div class="arrows arrow-right">
+                <label for="slide-2">
+                    <span><i class="fas fa-angle-right"></i></span>
+                </label>
+                <label for="slide-3">
+                    <span><i class="fas fa-angle-right"></i></span>
+                </label>
+                <label for="slide-1">
+                    <span><i class="fas fa-angle-right"></i></span>
+                </label>
+            </div>
+    
+            <div class="dots">
+                <label for="slide-1"></label>
+                <label for="slide-2"></label>
+                <label for="slide-3"></label>
+            </div>
+        </div>
+
+<!--  ABOUT PART  -->
+
+        <div class="about">
+            <div class="about-img">
+                <img src="images/kamayan_logo.jpg" alt="Kamayan logo">
+            </div>
+            <div class="about-text">
+                <span>ABOUT US</span>
+                <h2>We Provide The Best Food For You!</h2>
+                <p>Kamayan catering services offers a truly unique and immersive dining experience that brings the authentic flavors and traditions of  Filipino cuisine 
+                    to your special event or gathering. Whether it's a wedding, a birthday celebration, a corporate event, or any other occasion, kamayan catering adds
+                    a touch of cultural richness and culinary delight that will leave your guests amazed. The kamayan catering team is experienced and knowledgeable  
+                    in Filipino cuisine and culture, ensuring that the dishes are prepared with authenticity and attention to detail. They use  high-quality,  locally-
+                    sourced  ingredients to create flavorful and visually appealing dishes that cater to different dietary preferences and  requirements. It opened in 2019,
+                    the modern restaurant offers unforgettable culinary experiences with fresh, diverse, and creatively plated dishes. 
+                    Join us for exceptional service and a unique dining experience!</p>
+                <a href="about.html" class="btn">Learn More</a>
+            </div>
+        </div>
+
+<!--  MENU PART  -->
+
+        <div class="menu">
+            <div class="menu_title">WHAT WE OFFER</div>
+            <div class="dish">
+                <div class="single-img img-one">
+                    <div class="img-text">
+                        <h4>Buttered Garlic Mixed Seafood</h4>
+                        <p>It is a flavorful and aromatic dish, combination of different types of seafood, such as shrimp, mussels, and squid, cooked in a buttery garlic sauce.</p>
+                        <a href="order.php"><button>Order Now</button></a>
+                    </div>
+                </div>
+                <div class="single-img img-two">
+                    <div class="img-text">
+                        <h4>Buffalo Wings</h4>
+                        <p>It is a deep-fried chicken wings and then coated in a spicy and tangy sauce made with a combination of hot sauce, butter, and other seasonings.</p>
+                        <a href="order.php"><button>Order Now</button></a>
+                    </div>
+                </div>
+                <div class="single-img img-three">
+                    <div class="img-text">
+                        <h4>Lumpia</h4>
+                        <p>Mixture of vegetables, such as shredded carrots and bean sprouts, and minced meat, such as pork or chicken that is tightly in a thin pastry wrapper. </p>
+                        <a href="order.php"><button>Order Now</button></a>
+                    </div>
+                </div>
+                <div class="single-img img-four">
+                    <div class="img-text">
+                        <h4>Pork chop</h4>
+                        <p>It is meat dish in many cuisines around the world, a relatively thick slice of pan-fryed meat,that is seasoned with a variety of herbs and spices.</p>
+                        <a href="order.php"><button>Order Now</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_btn"><a href="menu.php"><button>VIEW ALL MENU</button></a></div>
+        </div>
+
+<!--  TESTIMONIAL PART  -->
+        <div class="testimonial">
+            <div class="review_text">
+                <span>Testimonial</span>
+                <h2>Review from our guests</h2>
+            </div>
+            <div class="rvw_container">
+                <div class="review mySwiper">
+                    <div class="testi-content swiper-wrapper">
+                        <div class="rvw_slide swiper-slide">
+                            <img src="images/testimonials/testimonial1.jpg" alt="Review 1" class="rvw_img">
+                            <p>I recently attended an event catered by Kamayan Catering and was impressed with the delicious and well-presented food.
+                                The appetizers and entrees were standout, and the dessert was worth the wait. 
+                                I highly recommend Kamayan Catering for their quality and attention to detail.</p>
+                            <i class="bx bxs-quote-alt-left quote-icon"></i>
+                            <div class="rvw_details">
+                                <span class="rvw_name">George Rodriquez</span>
+                                <span class="rvw_job">Food Vlogger</span>
+                            </div>
+                        </div>
+                        <div class="rvw_slide swiper-slide">
+                            <img src="images/testimonials/testimonial2.jpg" alt="Review 1" class="rvw_img">
+                            <p>I recently attended an event catered by Kamayan Catering and was impressed with the delicious and well-presented food.
+                                The appetizers and entrees were standout, and the dessert was worth the wait. 
+                                I highly recommend Kamayan Catering for their quality and attention to detail.</p>
+                            <i class="bx bxs-quote-alt-left quote-icon"></i>
+                            <div class="rvw_details">
+                                <span class="rvw_name">Ana Cruz</span>
+                                <span class="rvw_job">Food Vlogger</span>
+                            </div>
+                        </div>
+                        <div class="rvw_slide swiper-slide">
+                            <img src="images/testimonials/testimonial3.jpg" alt="Review 1" class="rvw_img">
+                            <p>I recently attended an event catered by Kamayan Catering and was impressed with the delicious and well-presented food.
+                                The appetizers and entrees were standout, and the dessert was worth the wait. 
+                                I highly recommend Kamayan Catering for their quality and attention to detail.</p>
+                            <i class="bx bxs-quote-alt-left quote-icon"></i>
+                            <div class="rvw_details">
+                                <span class="rvw_name">Jasmin Ignacio</span>
+                                <span class="rvw_job">Food Vlogger</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next sp-btn"></div>
+                    <div class="swiper-button-prev sp-btn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+<!-- FOOTER-->
+
+        <footer>
+            <div class="footer">
+                <div class="social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+                <ul class="list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">
+                    WONDER PRENDS @ 2023
+                </p>
+            </div>
+        </footer>
+        
+    
+        
+
+        
+        <!-- Swiper JS -->
+        <script src="js/swiper-bundle.min.js"></script>
+        
+        <!--Java Files-->
+        <script src="js/main.js"></script>
+
+
+
+        
+    </body>
+
+    
+</html>

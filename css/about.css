@@ -1,0 +1,116 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+/* Variables */
+:root {
+    --main-color: #6BA541;
+    --second-color: #6F270F;
+    --text-color: #000000;
+    --bg-color: #FFFCF5;
+
+/* Box Shadow */
+    --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
+}
+
+.about {
+    width: 100%;
+    height: 130vh;
+    background-color: #FFFCF5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .content img {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #6F270F;
+    border-radius: 30px;
+}
+
+.about_text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0px 10px;
+}
+
+.content {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about_text h1 {
+    color: #6F270F;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.about_text h5{
+    color: #000000;
+    font-size: 15px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.text p{
+    color: #000000;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+button{
+    width: 100%;
+    margin: 40px 0px 40px 0px;
+    background-color: #6BA541;
+    color: #3D262A;
+    border: 1px solid transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+button:hover {
+    color: #6BA541;
+    background: #3D262A;
+}
+
+@media screen and (max-width: 1180px){
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about .content img {
+        margin-bottom: 35px;
+    }
+
+    .about_text h1 {
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+}

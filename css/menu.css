@@ -1,0 +1,151 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem;
+  text-decoration: none;
+}
+
+/* Variables */
+:root {
+  --main-color: #6BA541;
+  --second-color: #6F270F;
+  --text-color: #000000;
+  --bg-color: #FFFCF5;
+
+/* Box Shadow */
+  --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
+}
+ 
+  /*HEADER*/
+.head {
+  width: 100vw;
+  height: 100vh;
+}
+  
+.header_pic {
+    height: 50vh;
+    width: 98.9vw;
+    top: 0vw;
+    position: relative;
+    background-image: url(../images/images_menu/header_menu.webp);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5vw;
+   
+    }
+  
+.header_text {
+      font-family: 'Baskerville Old Face';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 5vw;
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      text-shadow: 2px 2px #000;
+      height: 50vh;
+      width: 100vw;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+    }
+  
+/*FILTER*/
+.sort {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+.sort label {
+      margin-right: 1rem;
+    }
+    
+.sort select {
+      position: relative;
+      z-index: 1;
+      width: 11 rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+    
+   
+/*MENU*/
+.menu{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+    grid-gap: 20px 40px;
+  }
+  
+  
+.food-items{
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin: 20px 20px;
+}
+  
+.food-items img{
+  position: relative;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+  
+.details{
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 15px;
+}
+
+.details-sub{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.details-sub>h5{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.price{
+  text-align: right;
+}
+
+.details>p{
+  color: #6f6f6f;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.details>button{
+  background-color: #90C450;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 180px;
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    font-family: "Sogoe UI";
+    font-weight: 400;
+    background-color: #3D262A;
+    padding: 40px 0px 10px 0px;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #FFFFFF;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #90C450;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover {
+    opacity: 0.3;
+}
+
+.footer ul {
+    margin-top: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.footer ul li {
+    display:inline-block;
+    padding: 0px 15px;
+}
+
+.footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li a:hover {
+    opacity: 0.3;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #FFFFFF
+}
+
+
+
