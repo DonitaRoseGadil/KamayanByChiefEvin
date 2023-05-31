@@ -46,6 +46,7 @@ if( $_SERVER['REQUEST_METHOD'] == "GET"){
     $address = $row["address"];
     $landmark = $row["landmark"];
     $payment = $row["payment"];
+    $date = $row["deliveryDate"];
     $time = $row["deliveryTime"];
     $orders = $row["foodOrder"];
     $notes = $row["notes"];
@@ -58,6 +59,7 @@ else{
     $address = $_POST["address"];
     $landmark = $_POST["landmark"];
     $payment = $_POST["payment"];
+    $date = $_POST["deliveryDate"];
     $time = $_POST["deliveryTime"];
     $orders = $_POST["foodOrder"];
     $notes = $_POST["notes"];
@@ -72,7 +74,7 @@ else{
 
         }
 
-        $sql = "UPDATE orders SET name = '$name', phone = '$phone', address = '$address', landmark = '$landmark' , payment = '$payment', deliveryTime = '$time', foodOrder = '$orders' , notes = '$notes' WHERE order_id=$order_id";
+        $sql = "UPDATE orders SET name = '$name', phone = '$phone', address = '$address', landmark = '$landmark' , payment = '$payment', deliveryDate = '$date', deliveryTime = '$time', foodOrder = '$orders' , notes = '$notes' WHERE order_id=$order_id";
         $result = $connection->query($sql);
 
         if(!$result){
@@ -180,6 +182,10 @@ if (!isset($_GET['secretkey']) || $_GET['secretkey'] !== "578771b62a4c56df543538
                         <div class="form-group">
                             <label for="inputPassword">Payment</label>
                             <input class="form-control" id="inputPassword" name="payment" value="<?php echo $payment; ?>">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword">Date</label>
+                            <input class="form-control" id="inputPassword" name="deliveryDate" value="<?php echo $date; ?>">
                         </div>
                         <div class="form-group">
                             <label for="inputPassword">Time</label>

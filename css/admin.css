@@ -115,6 +115,10 @@
     float: left;
 }
 
+.form-group label {
+    color: #000000;
+}
+
 /* CSS for the Footer */
 .footer {
     background-color: #6F270F;
