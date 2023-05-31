@@ -40,12 +40,12 @@
             <form class="d-flex justify-content-center align-items-center w-75 flex-column" style="flex: 1" method="post">
                 <h2 class="display-3 text-white my-5">ADMIN LOGIN</h2>
                 <div class="d-flex flex-column justify-content-center align-items-center py-5 px-3" style="background: #3D262A; width: 25rem; border-radius: 20px">
-                    <div class="form-group">
+                    <div class="form-group-auth">
                         <label  for="exampleInputEmail1">Email address</label>
                         <input required  name="username"  class="form-control py-2 px-5" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder= "Enter username">
                     </div>
                     <br>
-                    <div class="form-group">
+                    <div class="form-group-auth">
                         <label for="exampleInputPassword1">Password</label>
                         <input required type="password" name="password" class="form-control py-2 px-5" id="exampleInputPassword1" placeholder="Password">
                     </div>

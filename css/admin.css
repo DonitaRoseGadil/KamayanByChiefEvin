@@ -119,6 +119,10 @@
     color: #000000;
 }
 
+.form-group-auth label {
+    color: #FFFCF5;
+}
+
 /* CSS for the Footer */
 .footer {
     background-color: #6F270F;
