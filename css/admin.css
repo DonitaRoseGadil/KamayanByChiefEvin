@@ -1,23 +1,38 @@
-.sidebar {
-    width: 20vw;
-    background-color: #3D262A;
-    min-height: 100vh;
-    margin-left: 0;
-    transition: .5s;
-    z-index: 99;
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    text-decoration: none;
 }
 
-.navs .route a h3 {
-    font-size: 20px !important;
+/* Variables */
+:root {
+    --main-color: #6BA541;
+    --second-color: #6F270F;
+    --text-color: #000000;
+    --bg-color: #FFFCF5;
+
+/* Box Shadow */
+    --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
 }
 
-.admin-login h2 {
+/* Log in Interface */
+
+.admin-login {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/images_menu/header_menu.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-group label {
     color: #fff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.btn.btn-primary.mt-4 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .btn-primary {
@@ -34,7 +49,6 @@
 .btn-outline-primary a {
     color: #6BA541;
     border-color: #6BA541;
-    
 }
 
 .btn-outline-primary a:hover,
@@ -44,32 +58,65 @@
     border-color: #6BA541;
 }
 
-.add-menu-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 50%;
-    padding: 10px;
-    width: 60px;
-    height: 60px;
+.wrapper {
+    padding: 1%;
+    width: 90%;
+    margin: 0 auto;
 }
 
-
-
-.admin-login {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/carousel_images/carousel_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.text-center {
+    text-align: center;
 }
 
-@media only screen and (max-width: 700px) {
-    .hamburger {
-        z-index: 99;
-        margin-top: 50px;
-    }
-    .sidebar {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/* CSS for the Menu */
+.topbar {
+    text-align: right;
+    background-color: #6F270F;
+    color: #FFFCF5;
+}
+
+.topbar ul {
+    list-style-type: none;
+}
+
+.topbar ul li {
+    display: inline;
+    padding: 3%;
+}
+
+.topbar ul li a {
+    color: #FFFCF5;
+    text-decoration: none;
+}
+
+.topbar ul li a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* CSS for the Content */
+.main-content {
+    background-color: #ebffeb;
+    height: 100vh;
+    padding: 2%;
+}
+
+.col-3 {
+    width: 29.3%;
+    background-color: #6BA541;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    float: left;
+}
+
+/* CSS for the Footer */
+.footer {
+    background-color: #6F270F;
+    color: #FFFCF5;
 }

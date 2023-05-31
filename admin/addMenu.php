@@ -84,38 +84,6 @@ if (!isset($_GET['secretkey']) || $_GET['secretkey'] !== "578771b62a4c56df543538
 
 <body>
     <div class="container-fluid d-flex justify-content-center align-items-stretch p-0">
-        <header>
-            <!-- Sidebar -->
-                <div class="sidebar h-100">
-                    <div class="container-fluid mb-5 p-4 d-flex justify-content-around align-items-center">
-                        <i data-feather="menu" style="color: white"></i>
-                        <h5 class="text-white p-0 text-center mb-0">Kamayan Dashboard</h5>
-                    </div>
-                    <div class="navs">
-                        <div class="route my-5">
-                            <div class="div py-2 mx-4 d-flex justify-content-center align-items-center" style="background: #65240F; border-radius: 20px">
-                            <a href="menu.php?secretkey=578771b62a4c56df54353819e6c4134f"><h3 class="text-white mb-0">Menu</h3></a>
-                                
-                            </div>
-                        </div>
-                        <div class="route my-5">
-                            <div class="div py-2 mx-4 d-flex justify-content-center align-items-center" style="background: #65240F; border-radius: 20px">
-                            <a href="messages.php?secretkey=578771b62a4c56df54353819e6c4134f"><h3 class="text-white mb-0">Messages</h3></a>
-                            </div>
-                        </div>
-                        <div class="route my-5">
-                            <div class="div py-2 mx-4 d-flex justify-content-center align-items-center" style="background: #65240F; border-radius: 20px">
-                                <a href="orders.php?secretkey=578771b62a4c56df54353819e6c4134f"><h3 class="text-white mb-0">Orders</h3></a>
-                            </div>
-                        </div>
-                        <div class="route my-5">
-                            <div class="div py-2 mx-4 d-flex justify-content-center align-items-center" style="background: #65240F; border-radius: 20px">
-                                <a href="logout.php"><h3 class="text-white mb-0">Logout</h3></a>
-                            </div>
-                        </div>
-                </div>
-            <!-- Sidebar -->
-        </header>
 
         <div class="container-fluid wrapper content p-5">
             <h1>Add Menu</h1>
