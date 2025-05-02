@@ -84,7 +84,7 @@
                         <h5 class='price'> $row[price] </h5>
                     </div>
                     <p>$row[caption]</p>
-                    <button>ORDER NOW</button>
+                    <a href='order.php' style='display: inline-block; padding: 10px 20px; background-color: #90C450; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; text-align: center; transition: background-color 0.3s ease;'>ORDER NOW!</a>
                 </div>
             </div>
                 

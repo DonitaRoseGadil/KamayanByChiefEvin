@@ -67,12 +67,12 @@ else{
 
     do{
 
-        if(empty($name) || empty($phone) || empty($address) || empty($landmark) || empty($payment) || empty($time) || empty($orders) || empty($notes)){
+        // if(empty($name) || empty($phone) || empty($address) || empty($landmark) || empty($payment) || empty($time) || empty($orders) || empty($notes)){
 
-            $errorMessage = "All the fields are required";
-            break;
+        //     $errorMessage = "All the fields are required";
+        //     break;
 
-        }
+        // }
 
         $sql = "UPDATE orders SET name = '$name', phone = '$phone', address = '$address', landmark = '$landmark' , payment = '$payment', deliveryDate = '$date', deliveryTime = '$time', foodOrder = '$orders' , notes = '$notes' WHERE order_id=$order_id";
         $result = $connection->query($sql);

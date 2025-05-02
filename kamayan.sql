@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2023 at 07:11 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: May 03, 2025 at 12:06 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -36,14 +36,6 @@ CREATE TABLE `incoming_users` (
   `createdAT` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `incoming_users`
---
-
-INSERT INTO `incoming_users` (`user_id`, `firstName`, `lastName`, `address`, `password`, `createdAT`) VALUES
-(1, 'Xyzel', 'Oribiana', 'P-3 Pamorangon Daet Camarines Norte', 'dsafasf', '2023-05-27 00:00:00'),
-(2, 'Xyzel', 'Oribiana', 'P-3 Pamorangon Daet Camarines Norte', 'dsafasf', '2023-05-27 00:00:00');
-
 -- --------------------------------------------------------
 
 --
@@ -63,10 +55,12 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`menu_id`, `title`, `price`, `caption`, `imgPath`) VALUES
-(1, 'Bufallo wingssssssssssfsdfsdfsdfsdfsdf', '252', 'the best food in town', 'images/best_seller/Buffalo_wings.jpg'),
-(3, 'Fish Filletssssssdfds', '100', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos incidunt asperiores, est possimus perspiciatis alias veniam error, iure officia ratione et quo, dolore aut deleniti. Labore nam perspiciatis fugiat id.', 'images/best_seller/Seafood.jpg'),
-(14, 'Pork Chop Chop', '200', 'Pork Chop in town', 'images/best_seller/Pork_chop.jpg'),
-(15, 'Spagetthi', '100', 'Best Spag in town', 'images/best_seller/Spaghetti.jpg');
+(26, 'Buffalo Wings', '599', 'Buffalo Wings are crispy, juicy chicken wings tossed in a tangy, spicy buffalo sauce, served hot and perfect for dipping—bold, flavorful, and irresistibly crave-worthy.', 'images/best_seller/Buffalo_wings.jpg'),
+(27, 'Fish Fillet', '499', 'Fish Fillet is tender, flaky white fish coated in a light, golden batter and fried to crispy perfection—delicately seasoned and served with a zesty dip for a mouthwatering bite every time.', 'images/best_seller/Fish_fillet.jpg'),
+(28, 'Pork Lumpia', '399', 'Pork Lumpia is a crispy, golden spring roll filled with savory seasoned ground pork, vegetables, and spices—fried to perfection and served with a sweet and tangy dipping sauce for an irresistible crunch in every bite.', 'images/best_seller/Lumpia.jpg'),
+(29, 'Porkchop', '699', 'Porkchop is a thick, juicy cut of pork, perfectly seasoned and seared to a golden-brown crust—tender on the inside and bursting with savory flavor in every bite.', 'images/best_seller/Pork_chop.jpg'),
+(30, 'Seafood', '699', 'Seafood is a delicious medley of the ocean’s finest—plump shrimp, tender squid, and fresh fish, lightly seasoned and cooked to perfection, offering a burst of briny, savory flavor in every bite.', 'images/best_seller/Seafood.jpg'),
+(31, 'Spaghetti', '399', 'Spaghetti is a comforting classic with al dente noodles smothered in rich, savory tomato sauce, loaded with seasoned ground meat, and topped with a generous sprinkle of cheese—hearty, flavorful, and loved by all ages.', 'images/best_seller/Spaghetti.jpg');
 
 -- --------------------------------------------------------
 
@@ -89,11 +83,7 @@ CREATE TABLE `messages` (
 --
 
 INSERT INTO `messages` (`message_id`, `firstName`, `lastName`, `email`, `mobileNumber`, `message`, `createdAt`) VALUES
-(1, 'John Michael', 'Molina', 'jmmmolinathebest@gmail.com', '09512766496', 'test', '2023-05-28'),
-(2, 'Xyzel', 'Oribiana', 'jmmmolinathebest@gmail.com', '09512766496', 'Reservation po ako please', '2023-05-28'),
-(3, 'John Michael', 'Molina', 'jmmmolinathebest@gmail.com', '09512766496', 'hey there love you', '2023-05-28'),
-(4, 'John Michael', 'Molina', 'jmmmolinathebest@gmail.com', '09512766496', 'test', '2023-05-28'),
-(5, 'John Michael', 'Molina', 'jmmmolinathebest@gmail.com', '09512766496', 'sdfsdf', '2023-05-28');
+(6, 'Zyne', 'Labrador', 'zynelabrador@gmail.com', '+63 912 345 6789', 'Do you offer pick up?', '2025-05-03');
 
 -- --------------------------------------------------------
 
@@ -108,6 +98,7 @@ CREATE TABLE `orders` (
   `address` text DEFAULT NULL,
   `landmark` text DEFAULT NULL,
   `payment` text DEFAULT NULL,
+  `deliveryDate` date DEFAULT NULL,
   `deliveryTime` text DEFAULT NULL,
   `notes` text DEFAULT NULL,
   `foodOrder` text DEFAULT NULL
@@ -117,10 +108,8 @@ CREATE TABLE `orders` (
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`order_id`, `name`, `phone`, `address`, `landmark`, `payment`, `deliveryTime`, `notes`, `foodOrder`) VALUES
-(8, 'Arianne Delos Reyesssssss', '09512766496', 'P-3 Pamorangon Daet Camarines Nortesss', 'dsf', 'Cash on Delivery', '06:47', 'sdfsdfsdsd', 'Food: Fish Filletsssss, Quantity: 4'),
-(9, 'John Michael Molina SR.', '09512766496', 'P-3 Pamorangon Daet Camarines Norte', 'Purok-3', 'Cash on Delivery', '08:43', 'Pakidaliin', 'Food: Bufallo wingsssssss, Quantity: 3Food: Fish Filletsssss, Quantity: 5'),
-(10, 'John Michael Molina', '09512766496', 'P-3 Pamorangon Daet Camarines Norte', 'sdf', 'Gcash', '13:10', 'fsdfs', 'Food: Bufallo wingssssssssssfsdfsdfsdfsdfsdf, Quantity: 5\n');
+INSERT INTO `orders` (`order_id`, `name`, `phone`, `address`, `landmark`, `payment`, `deliveryDate`, `deliveryTime`, `notes`, `foodOrder`) VALUES
+(13, 'Zyne Labrador', '09123456789', 'Vinzons Camarines Norte', 'Plusivo', 'Cash on Delivery', '2025-05-15', '15:00', 'Thank you!', 'Food: Buffalo Wings, Quantity: 1\nFood: Pork Lumpia, Quantity: 1\n');
 
 -- --------------------------------------------------------
 
@@ -140,12 +129,7 @@ CREATE TABLE `reviews` (
 --
 
 INSERT INTO `reviews` (`review_id`, `username`, `email`, `comment`) VALUES
-(1, 'Jhon Michael Molina', 'jmmmolinathebest@gmail.com', 'Sarap sulit'),
-(2, 'Juan Dela Cruz', 'mail@mail.com', 'Solid talaga'),
-(3, 'James', 'jmmmolinathebest@gmail.com', 'Solod po hehehehhe'),
-(4, 'Molina', 'jmmmolinathebest@gmail.com', 'The best'),
-(5, 'User', 'jmmmolinathebest@gmail.com', 'test, solid'),
-(6, 'root', 'teset424@etre.com', 'test');
+(7, 'customer', 'customer@gmail.com', 'The service is amazing!');
 
 --
 -- Indexes for dumped tables
@@ -195,25 +179,25 @@ ALTER TABLE `incoming_users`
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `menu_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `message_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
